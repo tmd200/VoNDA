@@ -1,0 +1,157 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<g id="colorbar" transform="translate(0,0)">
+<rect width="4.0495" height= "48" x="0" y="0" id="rect11" style="fill:rgb(5,255,255);stroke:rgb(5,255,255);"/>
+<rect width="4.0495" height= "48" x="4" y="0" id="rect13" style="fill:rgb(10,255,255);stroke:rgb(10,255,255);"/>
+<rect width="4.0495" height= "48" x="8" y="0" id="rect15" style="fill:rgb(15,255,255);stroke:rgb(15,255,255);"/>
+<rect width="4.0495" height= "48" x="12" y="0" id="rect17" style="fill:rgb(20,255,255);stroke:rgb(20,255,255);"/>
+<rect width="4.0495" height= "48" x="16" y="0" id="rect19" style="fill:rgb(25,255,255);stroke:rgb(25,255,255);"/>
+<rect width="4.0495" height= "48" x="20" y="0" id="rect21" style="fill:rgb(30,255,255);stroke:rgb(30,255,255);"/>
+<rect width="4.0495" height= "48" x="24" y="0" id="rect23" style="fill:rgb(35,255,255);stroke:rgb(35,255,255);"/>
+<rect width="4.0495" height= "48" x="28" y="0" id="rect25" style="fill:rgb(40,255,255);stroke:rgb(40,255,255);"/>
+<rect width="4.0495" height= "48" x="32" y="0" id="rect27" style="fill:rgb(45,255,255);stroke:rgb(45,255,255);"/>
+<rect width="4.0495" height= "48" x="36" y="0" id="rect29" style="fill:rgb(51,255,255);stroke:rgb(51,255,255);"/>
+<rect width="4.0495" height= "48" x="40" y="0" id="rect31" style="fill:rgb(56,255,255);stroke:rgb(56,255,255);"/>
+<rect width="4.0495" height= "48" x="44" y="0" id="rect33" style="fill:rgb(61,255,255);stroke:rgb(61,255,255);"/>
+<rect width="4.0495" height= "48" x="48" y="0" id="rect35" style="fill:rgb(66,255,255);stroke:rgb(66,255,255);"/>
+<rect width="4.0495" height= "48" x="52" y="0" id="rect37" style="fill:rgb(71,255,255);stroke:rgb(71,255,255);"/>
+<rect width="4.0495" height= "48" x="56" y="0" id="rect39" style="fill:rgb(76,255,255);stroke:rgb(76,255,255);"/>
+<rect width="4.0495" height= "48" x="60" y="0" id="rect41" style="fill:rgb(81,255,255);stroke:rgb(81,255,255);"/>
+<rect width="4.0495" height= "48" x="64" y="0" id="rect43" style="fill:rgb(86,255,255);stroke:rgb(86,255,255);"/>
+<rect width="4.0495" height= "48" x="68" y="0" id="rect45" style="fill:rgb(91,255,255);stroke:rgb(91,255,255);"/>
+<rect width="4.0495" height= "48" x="72" y="0" id="rect47" style="fill:rgb(96,255,255);stroke:rgb(96,255,255);"/>
+<rect width="4.0495" height= "48" x="76" y="0" id="rect49" style="fill:rgb(102,255,255);stroke:rgb(102,255,255);"/>
+<rect width="4.0495" height= "48" x="80" y="0" id="rect51" style="fill:rgb(107,255,255);stroke:rgb(107,255,255);"/>
+<rect width="4.0495" height= "48" x="84" y="0" id="rect53" style="fill:rgb(112,255,255);stroke:rgb(112,255,255);"/>
+<rect width="4.0495" height= "48" x="88" y="0" id="rect55" style="fill:rgb(117,255,255);stroke:rgb(117,255,255);"/>
+<rect width="4.0495" height= "48" x="92" y="0" id="rect57" style="fill:rgb(122,255,255);stroke:rgb(122,255,255);"/>
+<rect width="4.0495" height= "48" x="96" y="0" id="rect59" style="fill:rgb(127,255,255);stroke:rgb(127,255,255);"/>
+<rect width="4.0495" height= "48" x="100" y="0" id="rect61" style="fill:rgb(132,255,255);stroke:rgb(132,255,255);"/>
+<rect width="4.0495" height= "48" x="104" y="0" id="rect63" style="fill:rgb(137,255,255);stroke:rgb(137,255,255);"/>
+<rect width="4.0495" height= "48" x="108" y="0" id="rect65" style="fill:rgb(142,255,255);stroke:rgb(142,255,255);"/>
+<rect width="4.0495" height= "48" x="112" y="0" id="rect67" style="fill:rgb(147,255,255);stroke:rgb(147,255,255);"/>
+<rect width="4.0495" height= "48" x="116" y="0" id="rect69" style="fill:rgb(153,255,255);stroke:rgb(153,255,255);"/>
+<rect width="4.0495" height= "48" x="120" y="0" id="rect71" style="fill:rgb(158,255,255);stroke:rgb(158,255,255);"/>
+<rect width="4.0495" height= "48" x="124" y="0" id="rect73" style="fill:rgb(163,255,255);stroke:rgb(163,255,255);"/>
+<rect width="4.0495" height= "48" x="128" y="0" id="rect75" style="fill:rgb(168,255,255);stroke:rgb(168,255,255);"/>
+<rect width="4.0495" height= "48" x="132" y="0" id="rect77" style="fill:rgb(173,255,255);stroke:rgb(173,255,255);"/>
+<rect width="4.0495" height= "48" x="136" y="0" id="rect79" style="fill:rgb(178,255,255);stroke:rgb(178,255,255);"/>
+<rect width="4.0495" height= "48" x="140" y="0" id="rect81" style="fill:rgb(183,255,255);stroke:rgb(183,255,255);"/>
+<rect width="4.0495" height= "48" x="144" y="0" id="rect83" style="fill:rgb(188,255,255);stroke:rgb(188,255,255);"/>
+<rect width="4.0495" height= "48" x="148" y="0" id="rect85" style="fill:rgb(193,255,255);stroke:rgb(193,255,255);"/>
+<rect width="4.0495" height= "48" x="152" y="0" id="rect87" style="fill:rgb(198,255,255);stroke:rgb(198,255,255);"/>
+<rect width="4.0495" height= "48" x="156" y="0" id="rect89" style="fill:rgb(204,255,255);stroke:rgb(204,255,255);"/>
+<rect width="4.0495" height= "48" x="160" y="0" id="rect91" style="fill:rgb(209,255,255);stroke:rgb(209,255,255);"/>
+<rect width="4.0495" height= "48" x="164" y="0" id="rect93" style="fill:rgb(214,255,255);stroke:rgb(214,255,255);"/>
+<rect width="4.0495" height= "48" x="168" y="0" id="rect95" style="fill:rgb(219,255,255);stroke:rgb(219,255,255);"/>
+<rect width="4.0495" height= "48" x="172" y="0" id="rect97" style="fill:rgb(224,255,255);stroke:rgb(224,255,255);"/>
+<rect width="4.0495" height= "48" x="176" y="0" id="rect99" style="fill:rgb(229,255,255);stroke:rgb(229,255,255);"/>
+<rect width="4.0495" height= "48" x="180" y="0" id="rect101" style="fill:rgb(234,255,255);stroke:rgb(234,255,255);"/>
+<rect width="4.0495" height= "48" x="184" y="0" id="rect103" style="fill:rgb(239,255,255);stroke:rgb(239,255,255);"/>
+<rect width="4.0495" height= "48" x="188" y="0" id="rect105" style="fill:rgb(244,255,255);stroke:rgb(244,255,255);"/>
+<rect width="4.0495" height= "48" x="192" y="0" id="rect107" style="fill:rgb(249,255,255);stroke:rgb(249,255,255);"/>
+<rect width="4.0495" height= "48" x="196" y="0" id="rect109" style="fill:rgb(255,255,255);stroke:rgb(255,255,255);"/>
+<rect width="4.0495" height= "48" x="200" y="0" id="rect111" style="fill:rgb(255,255,255);stroke:rgb(255,255,255);"/>
+<rect width="4.0495" height= "48" x="204" y="0" id="rect113" style="fill:rgb(255,255,249);stroke:rgb(255,255,249);"/>
+<rect width="4.0495" height= "48" x="208" y="0" id="rect115" style="fill:rgb(255,255,244);stroke:rgb(255,255,244);"/>
+<rect width="4.0495" height= "48" x="212" y="0" id="rect117" style="fill:rgb(255,255,239);stroke:rgb(255,255,239);"/>
+<rect width="4.0495" height= "48" x="216" y="0" id="rect119" style="fill:rgb(255,255,234);stroke:rgb(255,255,234);"/>
+<rect width="4.0495" height= "48" x="220" y="0" id="rect121" style="fill:rgb(255,255,229);stroke:rgb(255,255,229);"/>
+<rect width="4.0495" height= "48" x="224" y="0" id="rect123" style="fill:rgb(255,255,224);stroke:rgb(255,255,224);"/>
+<rect width="4.0495" height= "48" x="228" y="0" id="rect125" style="fill:rgb(255,255,219);stroke:rgb(255,255,219);"/>
+<rect width="4.0495" height= "48" x="232" y="0" id="rect127" style="fill:rgb(255,255,214);stroke:rgb(255,255,214);"/>
+<rect width="4.0495" height= "48" x="236" y="0" id="rect129" style="fill:rgb(255,255,209);stroke:rgb(255,255,209);"/>
+<rect width="4.0495" height= "48" x="240" y="0" id="rect131" style="fill:rgb(255,255,204);stroke:rgb(255,255,204);"/>
+<rect width="4.0495" height= "48" x="244" y="0" id="rect133" style="fill:rgb(255,255,198);stroke:rgb(255,255,198);"/>
+<rect width="4.0495" height= "48" x="248" y="0" id="rect135" style="fill:rgb(255,255,193);stroke:rgb(255,255,193);"/>
+<rect width="4.0495" height= "48" x="252" y="0" id="rect137" style="fill:rgb(255,255,188);stroke:rgb(255,255,188);"/>
+<rect width="4.0495" height= "48" x="256" y="0" id="rect139" style="fill:rgb(255,255,183);stroke:rgb(255,255,183);"/>
+<rect width="4.0495" height= "48" x="260" y="0" id="rect141" style="fill:rgb(255,255,178);stroke:rgb(255,255,178);"/>
+<rect width="4.0495" height= "48" x="264" y="0" id="rect143" style="fill:rgb(255,255,173);stroke:rgb(255,255,173);"/>
+<rect width="4.0495" height= "48" x="268" y="0" id="rect145" style="fill:rgb(255,255,168);stroke:rgb(255,255,168);"/>
+<rect width="4.0495" height= "48" x="272" y="0" id="rect147" style="fill:rgb(255,255,163);stroke:rgb(255,255,163);"/>
+<rect width="4.0495" height= "48" x="276" y="0" id="rect149" style="fill:rgb(255,255,158);stroke:rgb(255,255,158);"/>
+<rect width="4.0495" height= "48" x="280" y="0" id="rect151" style="fill:rgb(255,255,153);stroke:rgb(255,255,153);"/>
+<rect width="4.0495" height= "48" x="284" y="0" id="rect153" style="fill:rgb(255,255,147);stroke:rgb(255,255,147);"/>
+<rect width="4.0495" height= "48" x="288" y="0" id="rect155" style="fill:rgb(255,255,142);stroke:rgb(255,255,142);"/>
+<rect width="4.0495" height= "48" x="292" y="0" id="rect157" style="fill:rgb(255,255,137);stroke:rgb(255,255,137);"/>
+<rect width="4.0495" height= "48" x="296" y="0" id="rect159" style="fill:rgb(255,255,132);stroke:rgb(255,255,132);"/>
+<rect width="4.0495" height= "48" x="300" y="0" id="rect161" style="fill:rgb(255,255,127);stroke:rgb(255,255,127);"/>
+<rect width="4.0495" height= "48" x="304" y="0" id="rect163" style="fill:rgb(255,255,122);stroke:rgb(255,255,122);"/>
+<rect width="4.0495" height= "48" x="308" y="0" id="rect165" style="fill:rgb(255,255,117);stroke:rgb(255,255,117);"/>
+<rect width="4.0495" height= "48" x="312" y="0" id="rect167" style="fill:rgb(255,255,112);stroke:rgb(255,255,112);"/>
+<rect width="4.0495" height= "48" x="316" y="0" id="rect169" style="fill:rgb(255,255,107);stroke:rgb(255,255,107);"/>
+<rect width="4.0495" height= "48" x="320" y="0" id="rect171" style="fill:rgb(255,255,102);stroke:rgb(255,255,102);"/>
+<rect width="4.0495" height= "48" x="324" y="0" id="rect173" style="fill:rgb(255,255,96);stroke:rgb(255,255,96);"/>
+<rect width="4.0495" height= "48" x="328" y="0" id="rect175" style="fill:rgb(255,255,91);stroke:rgb(255,255,91);"/>
+<rect width="4.0495" height= "48" x="332" y="0" id="rect177" style="fill:rgb(255,255,86);stroke:rgb(255,255,86);"/>
+<rect width="4.0495" height= "48" x="336" y="0" id="rect179" style="fill:rgb(255,255,81);stroke:rgb(255,255,81);"/>
+<rect width="4.0495" height= "48" x="340" y="0" id="rect181" style="fill:rgb(255,255,76);stroke:rgb(255,255,76);"/>
+<rect width="4.0495" height= "48" x="344" y="0" id="rect183" style="fill:rgb(255,255,71);stroke:rgb(255,255,71);"/>
+<rect width="4.0495" height= "48" x="348" y="0" id="rect185" style="fill:rgb(255,255,66);stroke:rgb(255,255,66);"/>
+<rect width="4.0495" height= "48" x="352" y="0" id="rect187" style="fill:rgb(255,255,61);stroke:rgb(255,255,61);"/>
+<rect width="4.0495" height= "48" x="356" y="0" id="rect189" style="fill:rgb(255,255,56);stroke:rgb(255,255,56);"/>
+<rect width="4.0495" height= "48" x="360" y="0" id="rect191" style="fill:rgb(255,255,51);stroke:rgb(255,255,51);"/>
+<rect width="4.0495" height= "48" x="364" y="0" id="rect193" style="fill:rgb(255,255,45);stroke:rgb(255,255,45);"/>
+<rect width="4.0495" height= "48" x="368" y="0" id="rect195" style="fill:rgb(255,255,40);stroke:rgb(255,255,40);"/>
+<rect width="4.0495" height= "48" x="372" y="0" id="rect197" style="fill:rgb(255,255,35);stroke:rgb(255,255,35);"/>
+<rect width="4.0495" height= "48" x="376" y="0" id="rect199" style="fill:rgb(255,255,30);stroke:rgb(255,255,30);"/>
+<rect width="4.0495" height= "48" x="380" y="0" id="rect201" style="fill:rgb(255,255,25);stroke:rgb(255,255,25);"/>
+<rect width="4.0495" height= "48" x="384" y="0" id="rect203" style="fill:rgb(255,255,20);stroke:rgb(255,255,20);"/>
+<rect width="4.0495" height= "48" x="388" y="0" id="rect205" style="fill:rgb(255,255,15);stroke:rgb(255,255,15);"/>
+<rect width="4.0495" height= "48" x="392" y="0" id="rect207" style="fill:rgb(255,255,10);stroke:rgb(255,255,10);"/>
+<rect width="4.0495" height= "48" x="396" y="0" id="rect209" style="fill:rgb(255,255,5);stroke:rgb(255,255,5);"/>
+
+   <path id="indication_0" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 0,48 0,3"/>
+   <path id="indication_1" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 40,48 0,3"/>
+   <path id="indication_2" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 80,48 0,3"/>
+   <path id="indication_3" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 120,48 0,3"/>
+   <path id="indication_4" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 160,48 0,3"/>
+   <path id="indication_5" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 200,48 0,3"/>
+   <path id="indication_6" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 240,48 0,3"/>
+   <path id="indication_7" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 280,48 0,3"/>
+   <path id="indication_8" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 320,48 0,3"/>
+   <path id="indication_9" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 360,48 0,3"/>
+   <path id="indication_10" style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:none" d="m 400,48 0,3"/>
+   <text x="0" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>      
+   <text x="40" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>    
+   <text x="80" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>    
+   <text x="120" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>      
+   <text x="160" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>    
+   <text x="200" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>    
+   <text x="240" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>      
+   <text x="280" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>    
+   <text x="320" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>  
+   <text x="360" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>   
+   <text x="400" y="58" font-family = "times" font-size="8" style="fill:black">value_indication</text>
+   </g>
+   <script type="text/javascript"><![CDATA[
+    var KEY = { w:87, a:65, s:83, d:68, i:73, j:74, k:75, l:76 };
+    var moveSpeed = 10;
+    var colorbar1 = document.getElementById("colorbar");   
+    
+    var xforms1 = colorbar1.transform.baseVal;  // An SVGTransformList
+    var firstXForm1 = xforms1.getItem(0);     // An SVGTransform
+    if (firstXForm1.type == SVGTransform.SVG_TRANSFORM_TRANSLATE){
+     var firstX1 = firstXForm1.matrix.e,
+         firstY1 = firstXForm1.matrix.f;
+    } 
+
+    document.documentElement.addEventListener('keydown',function(evt){
+      switch (evt.keyCode){
+        case KEY.w:          
+          colorbar1.transform.baseVal.getItem(0).setTranslate(firstX1,firstY1-=moveSpeed);         
+        break;
+        case KEY.s:
+          colorbar1.transform.baseVal.getItem(0).setTranslate(firstX1,firstY1+=moveSpeed);       
+        break;
+        case KEY.a:
+          colorbar1.transform.baseVal.getItem(0).setTranslate(firstX1-=moveSpeed,firstY1);            
+        break;
+        case KEY.d:
+          colorbar1.transform.baseVal.getItem(0).setTranslate(firstX1+=moveSpeed,firstY1);               
+        break;
+      }
+    },false);
+  ]]></script>  
+  </svg>

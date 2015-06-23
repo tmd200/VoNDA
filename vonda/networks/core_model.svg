@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="480"
+   height="250"
+   id="core_model"
+   version="1.0"   
+   sodipodi:docname="core_model.svg">
+   <defs>  
+    <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="leftarrow" orient="auto" markerUnits="userSpaceOnUse" id="se_marker_start_svg_1">
+        <path stroke-width="3" stroke="#000000" fill="#000000" d="m0,50l100,40l-30,-40l30,-40z"/>
+    </marker>
+    <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="rightarrow" orient="auto" markerUnits="userSpaceOnUse" id="se_marker_end_svg_1">
+        <path stroke-width="3" stroke="#000000" fill="#000000" d="m100,50l-100,40l30,-40l-30,-40z"/>
+    </marker>     
+    </defs>  
+    <title>Graphical Map Example Metabolic Network</title>  
+    <text x="0" y="236" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black">2012-2014, Amsterdam, Netherlands</text>
+    <text x="0" y="244" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black">(c) T.R. Maarleveld, t.r.maarleveld@cwi.nl</text>    
+      
+    <g transform="translate(-40,0)">
+    <text x="47" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold" text-decoration = "underline">X</text>       
+    <text x="83" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">A</text>  
+    <text x="119" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">B</text>  
+    <text x="100" y="123" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">C</text>      
+    <text x="153.5" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">D</text>  
+    <text x="189" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">E</text>  
+    <text x="225" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">F</text>  
+    <text x="189" y="176" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">G</text>  
+    <text x="225" y="176" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">H</text>  
+    <text x="260.5" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">I</text>  
+    <text x="294.5" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">J</text>      
+    <text x="329" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">K</text>  
+    <text x="367" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">L</text>  
+    <text x="329" y="175" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">M</text>  
+    <text x="367" y="175" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">N</text>     
+    <text x="329" y="87" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">O</text>  
+    <text x="367" y="87" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">P</text>   
+    <text x="400" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">Q</text>  
+    <text x="435" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">R</text>     
+    <text x="469" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold">S</text>  
+    <text x="101" y="177" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold" text-decoration = "underline">T</text>       
+    <text x="121" y="177" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold" text-decoration = "underline">U</text>       
+    <text x="505" y="151" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="11" style="fill:black;font-weight:bold" text-decoration = "underline">Y</text>       
+    <a>
+    <path
+       id="R01"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 57,148 24,0"><title>R01</title></path>
+    <text x="63" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R01</text>
+    <text x="58" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR01</text>
+    </a>
+    <a>
+    <path
+       id="R02"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 93,148 24,0"><title>R02</title></path>
+    <text x="98" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R02</text>
+    <text x="93" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR02</text>
+    </a>
+    <a>
+    <path
+       id="R03"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 90,141 10.5,-15"><title>R03</title></path>
+    <text x="88" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R03</text>
+    <text x="73" y="132" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR03</text>
+    </a>
+    <a>
+    <path
+       id="R04"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 108.5,126 10.5,15"><title>R04</title></path>
+    <text x="110" y="125" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R04</text>
+    <text x="115" y="132" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR04</text>
+    </a>
+    <a>   
+    <path
+       id="R05"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 127,148 24,0"><title>R05</title></path>
+    <text x="133" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R05</text>
+    <text x="128" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR05</text>
+    </a>    
+    <a>
+    <path
+       id="R06"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 162,144 25,-20"><title>R06</title></path>
+    <text x="175" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R06</text>
+    <text x="175" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR06</text>    
+    </a>
+    <a>   
+    <path
+       id="R07"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 198,122 25,0"><title>R07</title></path>
+    <text x="204" y="119" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R07</text>
+    <text x="199" y="130" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR07</text>
+    </a> 
+    <a>
+    <path
+       id="R08"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 234,122.5 24, 20"><title>R08</title></path>
+    <text x="235" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R08</text>
+    <text x="249" y="132" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR08</text>
+    </a>
+    <a>
+    <path
+       id="R09"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 162,152 25,20"><title>R09</title></path>
+    <text x="175" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R09</text>
+    <text x="175" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR09</text>
+    </a>
+    <a>   
+    <path
+       id="R10"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 198,173.5 25,0"><title>R10</title></path>
+    <text x="203" y="170.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R10</text>
+    <text x="199" y="181.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR10</text>
+    </a>   
+    <a>
+    <path
+       id="R11"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 234,173.5 24, -20"><title>R11</title></path>
+    <text x="235" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R11</text>
+    <text x="247" y="169" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR11</text>
+    </a>
+    <a>   
+    <path
+       id="R12"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 266,148 25,0"><title>R12</title></path>
+    <text x="272" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R12</text>
+    <text x="267" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR12</text>
+    </a> 
+    <a>
+    <path
+       id="R13"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 301,144 25,-20"><title>R13</title></path>
+    <text x="314" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R13</text>
+    <text x="314" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR13</text>
+    </a>
+    <a>   
+    <path
+       id="R14"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 340,122.5 25,0"><title>R14</title></path>
+    <text x="346" y="119.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R14</text>
+    <text x="341" y="130.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR14</text>
+    </a> 
+    <a>
+    <path
+       id="R15"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 375.5,122.5 24, 20"><title>R15</title></path>
+    <text x="376" y="140" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R15</text>
+    <text x="390" y="132" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR15</text>
+    </a>
+    <a>
+    <path
+       id="R16"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 301,152 25,20"><title>R16</title></path>
+    <text x="314" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R16</text>
+    <text x="314" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR16</text>
+    </a>
+    <a>   
+    <path
+       id="R17"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 340,173.5 25,0"><title>R17</title></path>
+    <text x="346" y="170.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R17</text>
+    <text x="342" y="181.5" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR17</text>
+    </a>   
+    <a>
+    <path
+       id="R18"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 375.5,173.5 24, -20"><title>R18</title></path>
+    <text x="376" y="160" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R18</text>
+    <text x="388" y="169" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR18</text>
+    </a>
+    <a>
+    <path
+       id="R19"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 333,114 0,-24"><title>R19</title></path>
+    <text x="336" y="105" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R19</text>
+    <text x="306" y="106" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR19</text> 
+    </a>
+    <a>   
+    <path
+       id="R20"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 340,84 25,0"><title>R20</title></path>
+    <text x="345" y="81" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R20</text>
+    <text x="341" y="92" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR20</text>
+    </a> 
+    <a>
+    <path
+       id="R21"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 370,90 0,24"><title>R21</title></path>
+    <text x="356" y="105" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R21</text>
+    <text x="372" y="105" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR21</text>
+    </a>
+    <a>   
+    <path
+       id="R22"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 409,148 24,0"><title>R22</title></path>
+    <text x="415" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R22</text>
+    <text x="410" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR22</text>
+    </a>    
+    <a> 
+    <path 
+       id="R23"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-start:url(#se_marker_start_svg_1);marker-end:url(#se_marker_end_svg_1)"
+       d="m 440 140 q 15 -30 30 0"><title>R23</title></path>    
+    <text x="449" y="133" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R23</text>
+    <text x="442" y="124" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR23</text>
+    </a>       
+    <a>   
+    <path
+       id="R24"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 442,148 25,0"><title>R24</title></path>
+    <text x="449" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R24</text>
+    <text x="443" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR24</text>
+    </a> 
+    <a>   
+    <path
+       id="R25"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 87,152 0,40 385,0 0,-37"><title>R25</title></path>
+    <path 
+       id="R25"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 105 182 q 10 20 20 0"><title>R25</title></path>
+    <text x="475" y="175" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R25</text>
+    <text x="128" y="190" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR25</text>
+    </a> 
+    <a>   
+    <path
+       id="R26"
+       style="fill:none;stroke:#000000;stroke-width:1.0;stroke-dasharray:0.91980253, 0.91980253;;marker-end:url(#se_marker_end_svg_1)"
+       d="m 477,148 25,0"><title>26</title></path>
+    <text x="483" y="145" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:white;stroke:black; stroke-opacity:0;fill-opacity:1;">R26</text>
+    <text x="478" y="156" font-family = "Myriad Pro, Gill Sans, Calabri, Trebuchet MS, sans-serif" font-size="7" style="fill:black; stroke-opacity:0;fill-opacity:0">ReactionValueR26</text>
+    </a> 
+    </g>    
+</svg>
