@@ -61,13 +61,13 @@ class PVisualizer:
             print("Info: The reaction suffix is {0}. Make sure this is correct. If not modify the reaction suffix via (1) setReactionSuffix() or (2) by re-using this functionality with as additonal argument reaction_suffix".format(self.reaction_suffix))
             print("Info: The species suffix is {0}. Make sure this is correct. If not modify the species suffix via (1) setSpeciesSuffix() or (2) by re-using this functionality with as additonal argument species_suffix".format(self.species_suffix))
     
-    def setReactionSuffix(r_suffix):
+    def setReactionSuffix(self, r_suffix):
         self.reaction_suffix = str(reaction_suffix)
 
-    def setSpeciesSuffix(s_suffix):
+    def setSpeciesSuffix(self, s_suffix):
         self.species_suffix = str(species_suffix)
     
-    def parseSVGfile(self,colorbar = None):  
+    def parseSVGfile(self, colorbar = None):  
         """ Parses SVG files and initiates different classes for modification of the SVG file """
         try:  
             file_in = open(os.path.join(self.SVG_dir,self.SVG_file), 'r')    
@@ -87,9 +87,39 @@ class PVisualizer:
         self.PerformOperations = PerformOperations(self.ModifySVG)
         self.output_filename = None
 
-    def doMapReactions(self,D_reactions,scaling_mode ='log',IsAbsoluteValues = True,maxValue=None,minValue=None,objective_reaction=None,objective=None,D_yields = None,filename_out = None,reaction_suffix=None,valuesRange=None,IsAddReactionValue=True,old_width = 1.0,new_width=2.0):
+    def doMapOfReactionIDs(self, filename_out=None, reaction_suffix=None):
+        if reaction_suffix == None:
+            reaction_suffix = self.reaction_suffix
+        self.parseSVGfile()
+        if filename_out == None:
+            file_path = os.path.join(self.output_dir, "{0:s}_reactions.svg".format(self.SVG_file[:-4]) )
+            self.output_filename = "{0:s}_reactions.svg".format(self.SVG_file[:-4])
+        else:
+            file_path = os.path.join(self.output_dir,"{0:s}.svg".format(filename_out) )
+            self.output_filename = "{0:s}.svg".format(filename_out)
+        file_out = open(file_path, 'w')
+
+        D_r_id = None
+        for self.ModifySVG.svg_line in self.ModifySVG.L_metabolic_map:           
+
+            if ('id="{0}'.format(reaction_suffix)) in self.ModifySVG.svg_line:
+                self.PerformOperations.findReaction(reaction_suffix)
+                D_r_id = self.PerformOperations.r_id
+            
+            if ('ReactionValue' in self.ModifySVG.svg_line) or "<title>{0}".format(reaction_suffix):
+                self.ModifySVG.addReactionValue({D_r_id: D_r_id}, True)
+
+            file_out.write(self.ModifySVG.svg_line)
+        file_out.close()    
+        print("Template map with reaction IDs can be found at {0:s}".format(file_path) )
+        
+    def doMapReactions(self, D_reactions, scaling_mode ='log', IsAbsoluteValues=True,
+                       maxValue=None, minValue=None, objective_reaction=None,
+                       objective=None, D_yields=None, filename_out=None,
+                       reaction_suffix=None, valuesRange=None, IsAddReactionValue=True,
+                       old_width=1.0, max_width=2.0):
         """        
-        doMapReactions(self,D_reactions,scaling_mode ='log',IsAbsoluteValues = True,maxValue=None,minValue=None,objective_reaction=None,objective=None,D_yields = None,filename_out = None,reaction_suffix=None,valuesRange=None,IsAddReactionValue=True,old_width = 1.0,new_width=2.0)
+        doMapReactions(self,D_reactions,scaling_mode ='log',IsAbsoluteValues = True,maxValue=None,minValue=None,objective_reaction=None,objective=None,D_yields = None,filename_out = None,reaction_suffix=None,valuesRange=None,IsAddReactionValue=True,old_width = 1.0,max_width=2.0)
         
         Map reaction values (e.g. fluxes) on the metabolic map for a given colorbar.       
          
@@ -137,7 +167,7 @@ class PVisualizer:
                 D_r_ids = self.ModifyData.ValuesLowerThan(valuesRange[1],D_r_ids,IsAbsoluteValues)        
                 
         L_input_r_ids = list(D_r_ids) # reaction identifiers specified by the user    
-        self.ModifySVG.Arr_data_scale = self.ModifySVG.createDataScale(minValue,maxValue,scaling_mode)
+        self.ModifySVG.createDataScale(minValue, maxValue, scaling_mode)
         
         ### open file path for visualization ###
         if filename_out == None:
@@ -150,16 +180,21 @@ class PVisualizer:
        
         yield_index = 0
         N_maximum_yields = 5
+        
+        # create a dictionary from reaction IDs to the string values that are
+        # to appear next to the arrows in the SVG
+        rids, vals = zip(*D_r_ids.iteritems())
+        if IsAbsoluteValues:
+            vals = map(np.abs, vals)
+        D_str_ids = dict(zip(rids, map('{0:.3g}'.format, vals)))
+
         for self.ModifySVG.svg_line in self.ModifySVG.L_metabolic_map:           
             if ('id="{0}'.format(reaction_suffix)) in self.ModifySVG.svg_line:
                 self.PerformOperations.findReaction(reaction_suffix)
             elif (style_element in self.ModifySVG.svg_line) and (self.PerformOperations.IsDoMapping == True) and (self.PerformOperations.r_id in L_input_r_ids):
                 r_value = D_r_ids[self.PerformOperations.r_id]
                 self.ModifySVG.dashedLine2solidLine() 
-                if r_value:
-                    self.ModifySVG.changeLineWidth(r_value,old_width,new_width)
-                else:
-                    self.ModifySVG.changeLineWidth(r_value,old_width,old_width)                
+                self.ModifySVG.changeLineWidth(r_value, old_width, max_width)
                 self.ModifySVG.colorReactions(r_value)
                 if IsAbsoluteValues or (not r_value):
                     self.ModifySVG.adaptArrowDirection(r_value)
@@ -167,7 +202,7 @@ class PVisualizer:
                     self.ModifySVG.adaptArrowDirection(abs(r_value))             # show negative numbers, so make all arrows in the default direction
                 self.PerformOperations.IsDoMapping = False                
             elif ('ReactionValue' in self.ModifySVG.svg_line) or "<title>{0}".format(reaction_suffix):
-                self.ModifySVG.addReactionValue(D_r_ids,IsAbsoluteValues,IsAddReactionValue)                
+                self.ModifySVG.addReactionValue(D_str_ids, IsAddReactionValue)                
             if ('<!--Objective' in self.ModifySVG.svg_line):    
                 try:
                     objective_value = D_r_ids[objective_reaction]
@@ -250,7 +285,10 @@ class PVisualizer:
         file_out.close()      
         print("Mapping is done to {0:s}".format(file_path) )
 
-    def doMapSquares(self,D_squares,colorbar = 'cyanyellow_white.svg',maxValue=None,minValue=None,filename_out = None,kegg_prefix = 'syn',reaction_suffix=None,valuesRange = None,IsAbsoluteValues=False):
+    def doMapSquares(self, D_squares, colorbar='cyanyellow_white.svg',
+                     maxValue=None, minValue=None, filename_out=None,
+                     kegg_prefix='syn', reaction_suffix=None,
+                     valuesRange=None, IsAbsoluteValues=False):
         """
         *** Map data to reaction squares (genes) ***
         
@@ -289,7 +327,7 @@ class PVisualizer:
             maxValue = max(L_values)
             minValue = min(L_values) 
         colorbarBoundary = max(abs(maxValue),abs(minValue)) # symmetric colorbar
-        self.ModifySVG.Arr_data_scale = self.ModifySVG.createDataScale(-colorbarBoundary,colorbarBoundary,mode='normal') # max = - min (symmetric colorbar)
+        self.ModifySVG.createDataScale(-colorbarBoundary, colorbarBoundary, mode='normal') # max = - min (symmetric colorbar)
         
         ### Modify values to visualize ###
         if valuesRange == None:
@@ -324,7 +362,9 @@ class PVisualizer:
                 IsLink = False
             if ('id="{0}'.format(reaction_suffix)) in self.ModifySVG.svg_line:                
                 self.PerformOperations.findReaction(reaction_suffix)               
-            if (style_element in self.ModifySVG.svg_line) and (self.PerformOperations.IsDoMapping == True)  and (self.PerformOperations.r_id in L_input_r_ids):   
+            if (style_element in self.ModifySVG.svg_line and
+                self.PerformOperations.IsDoMapping and 
+                self.PerformOperations.r_id in L_input_r_ids):   
                 r_id = self.PerformOperations.r_id                
                 if not r_id in D_square_indices:                                               # first square
                     D_square_indices[r_id] = {}
@@ -353,7 +393,10 @@ class PVisualizer:
         file_out.close() 
         print("Mapping results can be found at {0:s}".format(file_path) )
         
-    def doMapSpecies(self,D_species,scaling_mode ='log',maxValue=None,minValue=None,objective_reaction=None,objective=None,filename_out = None,species_suffix=None,valuesRange=None):
+    def doMapSpecies(self, D_species, scaling_mode ='log', maxValue=None,
+                     minValue=None, objective_reaction=None, objective=None,
+                     filename_out=None, species_suffix=None, valuesRange=None,
+                     IsAbsoluteValues=False):
         """
         *** Species ***
         Map all the metabolite values on the metabolic map for a given heat map.       
@@ -381,16 +424,16 @@ class PVisualizer:
             pass
         elif (type(valuesRange) == list) and (len(valuesRange) == 3):
             if valuesRange[0].lower() == 'outside':
-                D_s_ids = self.ModifyData.ValuesOutside(valuesRange[1],valuesRange[2],D_s_ids,IsAbsoluteValues)
+                D_s_ids = self.ModifyData.ValuesOutside(valuesRange[1],valuesRange[2],D_s_ids, IsAbsoluteValues)
             elif valuesRange[0].lower() == 'between':
-                D_s_ids = self.ModifyData.ValuesBetween(valuesRange[1],valuesRange[2],D_s_ids,IsAbsoluteValues)
+                D_s_ids = self.ModifyData.ValuesBetween(valuesRange[1],valuesRange[2],D_s_ids, IsAbsoluteValues)
         elif (type(valuesRange) == list) and (len(valuesRange) == 2):
             if valuesRange[0].lower() == 'higher':                
-                D_s_ids = self.ModifyData.ValuesHigherThan(valuesRange[1],D_s_ids,IsAbsoluteValues)
+                D_s_ids = self.ModifyData.ValuesHigherThan(valuesRange[1],D_s_ids, IsAbsoluteValues)
             elif valuesRange[0].lower() == 'lower':
-                D_s_ids = self.ModifyData.ValuesLowerThan(valuesRange[1],D_s_ids,IsAbsoluteValues)
+                D_s_ids = self.ModifyData.ValuesLowerThan(valuesRange[1],D_s_ids, IsAbsoluteValues)
         
-        self.ModifySVG.Arr_data_scale = self.ModifySVG.createDataScale(minValue,maxValue,scaling_mode)
+        self.ModifySVG.createDataScale(minValue, maxValue, scaling_mode)
         
         if filename_out == None:
             file_path = os.path.join(self.output_dir, "{0:s}_species.svg".format(self.SVG_file[:-4]) )
@@ -492,7 +535,7 @@ class PVisualizer:
                 r_id = re.findall('{0:s}{1:s}{2:s}'.format(prefix,reaction_regex,suffix),svg_line)[0][len(prefix):-len(suffix)].strip()  
                 if r_id != [] and r_id not in self.L_reactions_in_svg:
                     self.L_reactions_in_svg.append(r_id)    
-                    
+               
     def importKeyValueData(self,filename_in,file_dir = None,IsHeader = True,delimiter='\t'):
         """
         Imports key-value pair data from a text file. Keys can be 1) reaction identifiers or 2) metabolite identifiers and values can be for instance fluxes, reduced costs, concentrations.

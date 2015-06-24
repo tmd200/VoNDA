@@ -15,7 +15,7 @@ import math,numpy as np,os,re,sys
 file_dir = os.path.dirname(__file__)
 
 class ModifySVGfile:
-    def __init__(self,L_metabolic_map,colormap_file,start_marker,end_marker):
+    def __init__(self, L_metabolic_map, colormap_file, start_marker, end_marker):
         """
         Modifies a svg file
         
@@ -33,10 +33,10 @@ class ModifySVGfile:
         self.end_marker = end_marker
         
         ### Initial settings ###    
-        self.no_value_color = '#808080' # grey HEX-code
+        self.no_value_color = '#BBBBBB' # grey HEX-code
+        self.no_value_width = 0.6
         self.data_scale_index = 0
         self.colorbar_index = 0
-        
     
     def addColorbar(self):
         """ Adds the color bar """
@@ -45,11 +45,11 @@ class ModifySVGfile:
         for line in L_dat[::-1]:    
             if '<text' in line and 'value_indication' in line:
                 N_indications = 11 # number of values
-                index = int(math.floor(np.linspace(0,self.N_colors-1,N_indications)[self.colorbar_index]))                
+                index = int(math.floor(np.linspace(0,self.N_colors-1,N_indications)[self.colorbar_index]))     
                 if self.scale_mode == 'log':
-                    line = line.replace('value_indication',"{0:0.1e}".format(np.exp(self.Arr_data_scale[index])) )   
+                    line = line.replace('value_indication',"{0:.3g}".format(np.exp(self.Arr_data_scale[index])) )   
                 else:
-                    line = line.replace('value_indication',"{0:0.1e}".format(self.Arr_data_scale[index]) )  
+                    line = line.replace('value_indication',"{0:.3g}".format(self.Arr_data_scale[index]) )  
                 
                 self.colorbar_index += 1
                 self.svg_line = line + self.svg_line
@@ -82,7 +82,7 @@ class ModifySVGfile:
         return L_rgb_colors
  
 
-    def createDataScale(self,value_min,value_max,mode): 
+    def createDataScale(self, value_min, value_max, mode): 
         """
         Make the log scale that is necessary for coloring the reactions according to their value
         
@@ -96,12 +96,11 @@ class ModifySVGfile:
         """        
         self.scale_mode = mode
         if self.scale_mode == 'log':
-            Arr_data_scale = np.linspace(np.log(value_min), np.log(value_max), self.N_colors)       
+            self.Arr_data_scale = np.linspace(np.log(value_min), np.log(value_max), self.N_colors)       
         else:
-            Arr_data_scale = np.linspace(value_min,value_max, self.N_colors) 
-        return Arr_data_scale    
+            self.Arr_data_scale = np.linspace(value_min, value_max, self.N_colors) 
     
-    def changeLineWidth(self,value,old_width = 1.0,new_width = 2.0):
+    def changeLineWidth(self, value, old_width=1.0, max_width=2.0):
         """
         Change the line width of every reaction (arrow) found in the model 
         
@@ -111,10 +110,17 @@ class ModifySVGfile:
          - *value* (float)
          - *old_width* (float)
          - *new_width* (float)        
-        """        
-        self.svg_line = self.svg_line.replace('stroke-width:{0}'.format(old_width), 'stroke-width:{0}'.format(new_width)  )
+        """
+        if value:
+            if self.scale_mode == 'log':            
+                value = np.log(value)  
+            slope = (max_width - old_width) / (self.Arr_data_scale[-1] - self.Arr_data_scale[0])
+            new_width = old_width + value * slope
+            self.svg_line = self.svg_line.replace('stroke-width:{0}'.format(old_width), 'stroke-width:{0}'.format(new_width)  )
+        else:
+            self.svg_line = self.svg_line.replace('stroke-width:{0}'.format(old_width), 'stroke-width:{0}'.format(self.no_value_width)  )
             
-    def colorSquares(self,value,additional_colorbar = 'yellowcyan'):
+    def colorSquares(self, value, additional_colorbar='yellowcyan'):
         """
         Change the color of the reactions according to the chosen heatmap
         
@@ -134,7 +140,7 @@ class ModifySVGfile:
             self.svg_line = self.svg_line.replace('stroke-opacity:0;fill-opacity:0;','stroke-opacity:1;fill-opacity:1;') # make them visible
             self.svg_line = self.svg_line.replace('style="fill:white;stroke:black;','style="fill:{0};stroke:black;'.format(self.L_rgb_colors[index])) # coloring
             
-    def colorReactions(self,value):
+    def colorReactions(self, value):
         """
         Change the color of the reactions according to the chosen heatmap
         
@@ -224,7 +230,7 @@ class ModifySVGfile:
         if m:
             self.svg_line = self.svg_line.replace(m.group(0), 'stroke-dasharray:none;')
         
-    def addReactionValue(self,D_reactions,IsAbsolute = True,IsAddReactionValue = True):
+    def addReactionValue(self, D_reactions, IsAddReactionValue=True):
         """
         Show value of reaction
         
@@ -235,16 +241,13 @@ class ModifySVGfile:
         """        
         prefix = 'ReactionValue'      # hard coded            
         suffix = '</text>'
-        m = re.search('{0:s}.*{1:s}'.format(prefix,suffix),self.svg_line)
+        m = re.search('{0:s}.*{1:s}'.format(prefix, suffix), self.svg_line)
         if m and IsAddReactionValue:
-            r_id = m.group(0)[len(prefix):-len(suffix)]  
+            r_id = m.group(0)[len(prefix):-len(suffix)]
             if r_id in D_reactions:
-                if D_reactions[r_id]: # Do only if reaction has a value
-                    temp = '{0:s}{1:s}'.format(prefix,r_id)
-                    if IsAbsolute:     
-                        self.svg_line = self.svg_line.replace(temp, '{0:0.1e}'.format(np.abs(D_reactions[r_id])) )
-                    else:                 
-                        self.svg_line = self.svg_line.replace(temp, '{0:0.1e}'.format(D_reactions[r_id]) )
+                if D_reactions[r_id] is not None: # Do only if reaction has a value
+                    temp = '{0:s}{1:s}'.format(prefix, r_id)
+                    self.svg_line = self.svg_line.replace(temp, D_reactions[r_id])
                     self.svg_line = self.svg_line.replace('fill-opacity:0','fill-opacity:1')
         prefix ='<title>'
         suffix = '</title>'
@@ -252,10 +255,7 @@ class ModifySVGfile:
         if n:
             r_id = n.group(0)[len(prefix):-len(suffix)]  
             if r_id in D_reactions:
-                if IsAbsolute:     
-                    self.svg_line = self.svg_line.replace(r_id, '{0:s}:{1:0.1e}'.format(r_id,np.abs(D_reactions[r_id])))
-                else:                 
-                    self.svg_line = self.svg_line.replace(r_id, '{0:s}:{1:0.1e}'.format(r_id,D_reactions[r_id]))
+                self.svg_line = self.svg_line.replace(r_id, '{0:s}:{1:s}'.format(r_id, D_reactions[r_id]))
 
     def addSpeciesValue(self,D_species):
         """
